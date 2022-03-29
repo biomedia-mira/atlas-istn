@@ -1,0 +1,16 @@
+{
+  "epochs": 300,
+  "epoch_decay_steps": 300,
+  "epoch_loss_fading": 25,
+  "refine": 50,
+  "alpha": 0.01,
+  "lambda": 500,
+  "learning_rate": 0.001,
+  "batch_size": 10,
+  "val_interval": 10,
+  "normalizer": "zero_mean_unit_var",
+  "size": [64, 64],
+  "spacing": [2, 2],
+  "binarize": 0,
+  "num_classes": 2
+}

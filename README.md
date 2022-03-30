@@ -42,3 +42,28 @@ Install PyTorch using pip:
    ```shell
    pip install matplotlib jupyter pandas seaborn scikit-learn SimpleITK==1.2.4 tensorboard tensorboardX attrdict tqdm pyyaml pytorch-lightning torchio
    ```
+   
+### Usage
+
+Two example use-cases are provided:
+
+#### Example 1: 2D Synthetic Letter B
+To run training and test-set evaluation with the 2D synthetic letter B dataset:
+
+    python atlas-istn-letter-b.py
+
+Tensorboard can be used to monitor training with:
+
+    tensorboard --logdir=output/synth2d/full-stn/
+ 
+#### Example 2: 3D Synthetic Cardiac Dataset
+While the CCTA dataset used in the paper is not public, a synthetic 3D dataset is provided, which 
+can be downloaded from [here](https://imperialcollegelondon.box.com/s/6xicbiw1wtu1uhcd5wlaqttgm5m64uc3). Unzip the data under `data/synth3d`.
+
+To run training and test-set evaluation with a synthetic 3D cardiac dataset:  
+    
+    python atlas-istn-synth-cardiac.py
+    
+Tensorboard can be used to monitor training with:
+
+    tensorboard --logdir=output/synth3d/full-stn/

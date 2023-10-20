@@ -1,7 +1,8 @@
 # Atlas-ISTN: Joint segmentation, registration and atlas construction with image-and-spatial transformer networks
 
-This repository contains the code for the paper
+When using this code, please cite the following paper:
 > M. Sinclair, A. Schuh, K. Hahn, K. Petersen, Y. Bai, J. Batten, M. Schaap, B. Glocker. [_Atlas-ISTN: Joint segmentation, registration and atlas construction with image-and-spatial transformer networks_](https://doi.org/10.1016/j.media.2022.102383). 2022. Medical Image Analysis, Vol. 78
+
 
 ## Code
 
@@ -67,3 +68,6 @@ To run training and test-set evaluation with a synthetic 3D cardiac dataset:
 Tensorboard can be used to monitor training with:
 
     tensorboard --logdir=output/synth3d/full-stn/
+
+## License
+This project is licensed under the [Apache License 2.0](LICENSE).
